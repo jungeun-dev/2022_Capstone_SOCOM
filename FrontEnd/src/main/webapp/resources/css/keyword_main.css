@@ -1,0 +1,122 @@
+@charset "UTF-8";
+
+*,
+*:after,
+*:before {
+  box-sizing: border-box;
+}
+
+:root {
+  --primary-color: #2a2a2a;
+  --secondary-color: #743e0d;
+  --white-color: white;
+  --green-color: #439c47;
+  --transition-animation: all .5s;
+}
+
+body {
+  font-family: "Crimson Text", serif;
+  font-size: 16px;
+  color: var(--primary-color);
+  background-color: var(--white-color);
+  margin: 10px;
+}
+
+a {
+  color: var(--primary-color);
+  text-decoration: none;
+  transition: var(--transition-animation);
+}
+a:hover, a:visited, a:focus {
+  color: var(--primary-color);
+}
+
+@font-face {
+     font-family: 'S-CoreDream-4Regular';
+     src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_six@1.2/S-CoreDream-4Regular.woff') format('woff');
+     font-weight: normal;
+     font-style: normal;
+}
+
+p {
+  font-family: 'S-CoreDream-4Regular';
+  margin-top: 0;
+  margin-bottom: 20px;
+  text-align: justify;
+  text-justify: inter-word;
+}
+
+.menu {
+  margin: 0px auto;
+  padding: 0;
+  list-style: none;
+  display: table;
+  width: 780px;
+  text-align: center;
+}
+.menu-list {
+  display: table-cell;
+  position: relative;
+  padding:15px 0;
+  margin: 15px 0;
+  width: 130px;
+}
+
+
+/* 완료 */
+
+/**************************************
+    Header of Paper
+**************************************/
+header {
+  text-align: center;
+  position: relative;
+}
+header h1.news_paper_title {
+  margin: 0;
+}
+header h1.news_paper_title a {
+  font-family: "Playfair Display", serif;
+  font-weight: 900;
+  font-size: 60px;
+  text-transform: uppercase;
+  display: inline-block;
+  line-height: 60px;
+  margin: 15px 0;
+  cursor: pointer;
+  color: var(--primary-color);
+  transition: var(--transition-animation);
+}
+header h1.news_paper_title a:hover {
+  color: var(--secondary-color);
+}
+header .news_paper_location {
+  font-weight: 600;
+  border-bottom: 1px solid var(--primary-color);
+  border-top: 1px solid var(--primary-color);
+  padding: 10px 0 10px 0;
+  margin: 20px 0;
+}
+
+@media only all and (max-width: 600px) {
+  header h1.news_paper_title a {
+    font-size: 40px;
+    line-height: 40px;
+    margin: 5px 0;
+  }
+}
+
+
+.emotion_ul {
+  margin: 5px auto 0;
+  padding: 0;
+  list-style: none;
+  display: table;
+  width: 600px;
+  text-align: center;
+}
+.emotion_li {
+  display: table-cell;
+  position: relative;
+  padding: 15px 0;
+}

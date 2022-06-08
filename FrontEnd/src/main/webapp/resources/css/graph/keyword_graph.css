@@ -1,0 +1,6 @@
+@charset "UTF-8";
+
+.body {background-color:#fafafa; font-family:'Roboto';overflow:none}
+.container { margin:150px auto; max-width:960px;}
+h2 { margin:30px auto; text-align:center;}
+
